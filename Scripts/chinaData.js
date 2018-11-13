@@ -453,7 +453,7 @@ var series2 = {
                                 //borderWidth: 1,
                                 padding: [0, 0, 5, 0],
                                 fontSize: 32,
-                                width: 54,
+                                width: 75,
                                 height: 30,
 
                                 borderWidth: 1,
@@ -482,7 +482,7 @@ var series2 = {
                                 //borderRadius: 15,
                                 padding: [5, 0, 0, 0],
                                 fontSize: 12,
-                                width: 54,
+                                width: 75,
                                 height: 16,
 
                                 borderWidth: 1,
@@ -767,7 +767,7 @@ var series3 = {
                                 //borderWidth: 1,
                                 padding: [0, 0, 5, 0],
                                 fontSize: 32,
-                                width: 54,
+                                width: 75,
                                 height: 30,
 
                                 borderWidth: 1,
@@ -796,9 +796,8 @@ var series3 = {
                                 //borderRadius: 15,
                                 padding: [5, 0, 0, 0],
                                 fontSize: 12,
-                                width: 54,
+                                width: 75,
                                 height: 16,
-
                                 borderWidth: 1,
                                 borderColor: 'rgba(244,20,133,0.1)',
                                 fontFamily: 'myFourthFont',
@@ -884,7 +883,7 @@ var series3 = {
                                 //borderWidth: 1,
                                 padding: [0, 0, 5, 0],
                                 fontSize: 32,
-                                width: 54,
+                                width: 75,
                                 height: 30,
 
                                 borderWidth: 1,
@@ -914,7 +913,7 @@ var series3 = {
                                 //borderRadius: 15,
                                 padding: [5, 0, 0, 0],
                                 fontSize: 12,
-                                width: 54,
+                                width: 75,
                                 height: 16,
 
                                 borderWidth: 1,
@@ -1205,7 +1204,7 @@ var series4 = {
                                 //borderWidth: 1,
                                 padding: [0, 0, 5, 0],
                                 fontSize: 32,
-                                width: 54,
+                                width: 75,
                                 height: 30,
 
                                 borderWidth: 1,
@@ -1234,9 +1233,8 @@ var series4 = {
                                 //borderRadius: 15,
                                 padding: [5, 0, 0, 0],
                                 fontSize: 12,
-                                width: 54,
+                                width: 75,
                                 height: 16,
-
                                 borderWidth: 1,
                                 borderColor: 'rgba(244,20,133,0.1)',
                                 fontFamily: 'myFourthFont',
@@ -1308,7 +1306,6 @@ var series4 = {
                                 fontSize: 32,
                                 width: 50,
                                 height: 30,
-
                                 borderWidth: 1,
                                 borderColor: 'rgba(248,106,62,0.1)',
                                 fontFamily: 'myFirstFont',
@@ -1322,9 +1319,8 @@ var series4 = {
                                 //borderWidth: 1,
                                 padding: [0, 0, 5, 0],
                                 fontSize: 32,
-                                width: 54,
+                                width: 75,
                                 height: 30,
-
                                 borderWidth: 1,
                                 borderColor: 'rgba(244,20,133,0.1)',
                                 fontFamily: 'myFirstFont',
@@ -1352,7 +1348,7 @@ var series4 = {
                                 //borderRadius: 15,
                                 padding: [5, 0, 0, 0],
                                 fontSize: 12,
-                                width: 54,
+                                width: 75,
                                 height: 16,
 
                                 borderWidth: 1,
@@ -1438,7 +1434,7 @@ var series4 = {
                                 //borderWidth: 1,
                                 padding: [0, 0, 5, 0],
                                 fontSize: 32,
-                                width: 54,
+                                width: 75,
                                 height: 30,
 
                                 borderWidth: 1,
@@ -1468,7 +1464,7 @@ var series4 = {
                                 //borderRadius: 15,
                                 padding: [5, 0, 0, 0],
                                 fontSize: 12,
-                                width: 54,
+                                width: 75,
                                 height: 16,
 
                                 borderWidth: 1,
@@ -1759,7 +1755,7 @@ var series5 = {
                                 //borderWidth: 1,
                                 padding: [0, 0, 5, 0],
                                 fontSize: 32,
-                                width: 54,
+                                width: 75,
                                 height: 30,
 
                                 borderWidth: 1,
@@ -1788,7 +1784,7 @@ var series5 = {
                                 //borderRadius: 15,
                                 padding: [5, 0, 0, 0],
                                 fontSize: 12,
-                                width: 54,
+                                width: 75,
                                 height: 16,
 
                                 borderWidth: 1,
@@ -1876,7 +1872,7 @@ var series5 = {
                                 //borderWidth: 1,
                                 padding: [0, 0, 5, 0],
                                 fontSize: 32,
-                                width: 54,
+                                width: 75,
                                 height: 30,
 
                                 borderWidth: 1,
@@ -1906,7 +1902,7 @@ var series5 = {
                                 //borderRadius: 15,
                                 padding: [5, 0, 0, 0],
                                 fontSize: 12,
-                                width: 54,
+                                width: 75,
                                 height: 16,
 
                                 borderWidth: 1,
@@ -1992,7 +1988,7 @@ var series5 = {
                                 //borderWidth: 1,
                                 padding: [0, 0, 5, 0],
                                 fontSize: 32,
-                                width: 54,
+                                width: 75,
                                 height: 30,
 
                                 borderWidth: 1,
@@ -2022,7 +2018,7 @@ var series5 = {
                                 //borderRadius: 15,
                                 padding: [5, 0, 0, 0],
                                 fontSize: 12,
-                                width: 54,
+                                width: 75,
                                 height: 16,
 
                                 borderWidth: 1,
@@ -2108,7 +2104,7 @@ var series5 = {
                                 //borderWidth: 1,
                                 padding: [0, 0, 5, 0],
                                 fontSize: 32,
-                                width: 54,
+                                width: 75,
                                 height: 30,
 
                                 borderWidth: 1,
@@ -2138,7 +2134,7 @@ var series5 = {
                                 //borderRadius: 15,
                                 padding: [5, 0, 0, 0],
                                 fontSize: 12,
-                                width: 54,
+                                width: 75,
                                 height: 16,
 
                                 borderWidth: 1,
@@ -2434,7 +2430,7 @@ var series6 = {
                                 //borderWidth: 1,
                                 padding: [0, 0, 5, 0],
                                 fontSize: 32,
-                                width: 54,
+                                width: 75,
                                 height: 30,
 
                                 borderWidth: 1,
@@ -2463,7 +2459,7 @@ var series6 = {
                                 //borderRadius: 15,
                                 padding: [5, 0, 0, 0],
                                 fontSize: 12,
-                                width: 54,
+                                width: 75,
                                 height: 16,
 
                                 borderWidth: 1,
@@ -2551,7 +2547,7 @@ var series6 = {
                                 //borderWidth: 1,
                                 padding: [0, 0, 5, 0],
                                 fontSize: 32,
-                                width: 54,
+                                width: 75,
                                 height: 30,
 
                                 borderWidth: 1,
@@ -2581,7 +2577,7 @@ var series6 = {
                                 //borderRadius: 15,
                                 padding: [5, 0, 0, 0],
                                 fontSize: 12,
-                                width: 54,
+                                width: 75,
                                 height: 16,
 
                                 borderWidth: 1,
@@ -2667,7 +2663,7 @@ var series6 = {
                                 //borderWidth: 1,
                                 padding: [0, 0, 5, 0],
                                 fontSize: 32,
-                                width: 54,
+                                width: 75,
                                 height: 30,
 
                                 borderWidth: 1,
@@ -2697,7 +2693,7 @@ var series6 = {
                                 //borderRadius: 15,
                                 padding: [5, 0, 0, 0],
                                 fontSize: 12,
-                                width: 54,
+                                width: 75,
                                 height: 16,
 
                                 borderWidth: 1,
@@ -2783,7 +2779,7 @@ var series6 = {
                                 //borderWidth: 1,
                                 padding: [0, 0, 5, 0],
                                 fontSize: 32,
-                                width: 54,
+                                width: 75,
                                 height: 30,
 
                                 borderWidth: 1,
@@ -2813,7 +2809,7 @@ var series6 = {
                                 //borderRadius: 15,
                                 padding: [5, 0, 0, 0],
                                 fontSize: 12,
-                                width: 54,
+                                width: 75,
                                 height: 16,
 
                                 borderWidth: 1,
@@ -2899,7 +2895,7 @@ var series6 = {
                                 //borderWidth: 1,
                                 padding: [0, 0, 5, 0],
                                 fontSize: 32,
-                                width: 54,
+                                width: 75,
                                 height: 30,
 
                                 borderWidth: 1,
@@ -2929,7 +2925,7 @@ var series6 = {
                                 //borderRadius: 15,
                                 padding: [5, 0, 0, 0],
                                 fontSize: 12,
-                                width: 54,
+                                width: 75,
                                 height: 16,
 
                                 borderWidth: 1,
@@ -3075,7 +3071,7 @@ var series7 = {
                                 //borderWidth: 1,
                                 padding: [0, 0, 5, 0],
                                 fontSize: 32,
-                                width: 54,
+                                width: 75,
                                 height: 30,
 
                                 borderWidth: 1,
@@ -3105,7 +3101,7 @@ var series7 = {
                                 //borderRadius: 15,
                                 padding: [5, 0, 0, 0],
                                 fontSize: 12,
-                                width: 54,
+                                width: 75,
                                 height: 16,
 
                                 borderWidth: 1,
@@ -3260,7 +3256,7 @@ var series8 = {
                                 //borderWidth: 1,
                                 padding: [0, 0, 5, 0],
                                 fontSize: 32,
-                                width: 54,
+                                width: 75,
                                 height: 30,
 
                                 borderWidth: 1,
@@ -3290,7 +3286,7 @@ var series8 = {
                                 //borderRadius: 15,
                                 padding: [5, 0, 0, 0],
                                 fontSize: 12,
-                                width: 54,
+                                width: 75,
                                 height: 16,
 
                                 borderWidth: 1,
@@ -3377,7 +3373,7 @@ var series8 = {
                                 //borderWidth: 1,
                                 padding: [0, 0, 5, 0],
                                 fontSize: 32,
-                                width: 54,
+                                width: 75,
                                 height: 30,
 
                                 borderWidth: 1,
@@ -3407,7 +3403,7 @@ var series8 = {
                                 //borderRadius: 15,
                                 padding: [5, 0, 0, 0],
                                 fontSize: 12,
-                                width: 54,
+                                width: 75,
                                 height: 16,
 
                                 borderWidth: 1,
