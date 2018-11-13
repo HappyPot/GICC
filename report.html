@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>环形图</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            background: #893987;
+        }
+
+        #progress-thin {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        #progress-thick {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        .A {
+            position: relative;
+            top: 0px;
+            left: 0px;
+            width: 400px;
+            height: 400px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="A">
+        <canvas width="400" height="400" id="progress-thin"></canvas>
+        <canvas width="400" height="400" id="progress-thick"></canvas>
+        <canvas width="400" height="400" id="bg"></canvas>
+    </div>
+
+    <script src="Scripts/canvas-report.js"></script>
+</body>
+
+</html>

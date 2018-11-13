@@ -1,0 +1,1055 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>GICC</title>
+    <link rel="stylesheet" href="css/styleBig.css" media="screen" type="text/css">
+</head>
+
+<body>
+    <div class="top">
+        <img src="img/logo.png">
+        <p class="tittle">GECA早期胃癌筛查大数据平台</p>
+        <!-- <h2 class="change_tittle"><span>——</span>&nbsp;筛查监控&nbsp;<span>——</span></h2>
+        <h2 class="change_tittle2" style="display: none"><span>——</span>&nbsp;运营分析&nbsp;<span>——</span></h2> -->
+        <div class="change_tittle">
+            <span class="underline">筛查监控</span>
+            <span>运营分析</span>
+        </div>
+    </div>
+    <div id="mrak">
+        <span>% </span>
+        <p>* %表示胃癌检出率:</p>
+        <p>早癌或胃癌数/胃镜检查数</p>
+    </div>
+
+    <div class="wrapper">
+
+        <!--map-->
+        <div id="china-map"></div>
+        <!--time-->
+        <!-- <div class="time"> -->
+        <!-- <img src="img/time.png" style="width: 100%" alt="time"> -->
+        <!-- </div> -->
+        <!--circle-->
+        <div class="jq22-container">
+
+            <div class="A">
+                <canvas width="400" height="400" id="progress-thin"></canvas>
+                <canvas width="400" height="400" id="progress-thick"></canvas>
+                <canvas width="400" height="400" id="bg"></canvas>
+            </div>
+
+        </div>
+        <!--left-->
+        <div id="box">
+            <!--left1-->
+            <div class="borderbox top">
+                <p class="border_tittle">
+                    <i></i>
+                    <span>|&nbsp;血清学检查</span>
+                </p>
+                <div style="padding-left: 25%">
+                    <div id="count1" class="f_48 f_count">9</div>
+                    <p class="f_24 pb_30">血检总人数</p>
+                    <div id="count2" class="f_48 f_count">2752</div>
+                    <p class="f_24">HP阳性数</p>
+                </div>
+                <div class="people_box">
+                    <ul class="people_list" style="opacity:0.2">
+                        <li>
+                            <img src="img/icon3.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3.png" alt="people">
+                        </li>
+                    </ul>
+                    <div class="people_ul_animation">
+                        <ul class="people_list people_list_animation">
+                            <li>
+                                <img src="img/icon3_1.png" alt="people">
+                            </li>
+                            <li>
+                                <img src="img/icon3_1.png" alt="people">
+                            </li>
+                            <li>
+                                <img src="img/icon3_1.png" alt="people">
+                            </li>
+                            <li>
+                                <img src="img/icon3_1.png" alt="people">
+                            </li>
+                            <li>
+                                <img src="img/icon3_1.png" alt="people">
+                            </li>
+                            <li>
+                                <img src="img/icon3_1.png" alt="people">
+                            </li>
+                            <li>
+                                <img src="img/icon3_1.png" alt="people">
+                            </li>
+                            <li>
+                                <img src="img/icon3_1.png" alt="people">
+                            </li>
+                            <li>
+                                <img src="img/icon3_1.png" alt="people">
+                            </li>
+                            <li>
+                                <img src="img/icon3_1.png" alt="people">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="borderbox bottom">
+                <p class="border_tittle">
+                    <i></i>
+                    <span>|&nbsp;胃镜检查</span>
+                </p>
+                <div style="padding-left: 25%">
+                    <div id="count3" class="f_48 f_count">984</div>
+                    <p class="f_24 pb_20">实际精查人数</p>
+                    <div id="count4" class="f_48 f_count">2422</div>
+                    <p class="f_24">应精查人数</p>
+                </div>
+                <div class="people_box">
+                    <ul class="people_list" style="opacity:0.2">
+                        <li>
+                            <img src="img/icon3.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3.png" alt="people">
+                        </li>
+                    </ul>
+                    <div class="people_ul_animation">
+                        <ul class="people_list people_list_animation">
+                            <li>
+                                <img src="img/icon3_1.png" alt="people">
+                            </li>
+                            <li>
+                                <img src="img/icon3_1.png" alt="people">
+                            </li>
+                            <li>
+                                <img src="img/icon3_1.png" alt="people">
+                            </li>
+                            <li>
+                                <img src="img/icon3_1.png" alt="people">
+                            </li>
+                            <li>
+                                <img src="img/icon3_1.png" alt="people">
+                            </li>
+                            <li>
+                                <img src="img/icon3_1.png" alt="people">
+                            </li>
+                            <li>
+                                <img src="img/icon3_1.png" alt="people">
+                            </li>
+                            <li>
+                                <img src="img/icon3_1.png" alt="people">
+                            </li>
+                            <li>
+                                <img src="img/icon3_1.png" alt="people">
+                            </li>
+                            <li>
+                                <img src="img/icon3_1.png" alt="people">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--left2-->
+            <div class="leftbox">
+                <h2 class="leftbox_tittle">诊断结果</h2>
+                <ul>
+                    <li>
+                        <span class="leftbox_tittle pl_50">|
+                            <b>&nbsp;早癌&nbsp;/&nbsp;胃癌</b>
+                        </span>
+                        <h2 class="f_24">高级别上皮内瘤变<span class="people_count f_24">2</span></h2>
+                        <!-- <div class="block_red">
+                            <div id="count5" class="f_36 f_count">2</div>
+                        </div>-->
+                        <div class="people_box pl_50">
+                            <ul class="people_list people_list2" style="opacity:0">
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+
+                            </ul>
+                            <div class="people_ul_animation">
+                                <ul class="people_list people_list_animation people_list2 people_list_animation2">
+                                    <li>
+                                        <img src="img/icon3_2.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_2.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_2.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_2.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_2.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_2.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_2.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_2.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_2.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_2.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_2.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_2.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_2.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_2.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_2.png" alt="people">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h2 class="f_24">早期胃癌<span class="people_count f_24">7</span></h2>
+                        <!--<div class="block_blue">
+                            <div id="count6" class="f_36 f_count">4</div>
+                        </div>-->
+                        <div class="people_box pl_50">
+                            <ul class="people_list people_list2" style="opacity:0">
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3.png" alt="people">
+                                </li>
+
+                            </ul>
+                            <div class="people_ul_animation">
+                                <ul class="people_list people_list_animation people_list2 people_list_animation2">
+                                    <li>
+                                        <img src="img/icon3_3.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_3.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_3.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_3.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_3.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_3.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_3.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_3.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_3.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_3.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_3.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_3.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_3.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_3.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_3.png" alt="people">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2 class="f_24">早期食管癌<span class="people_count f_24">2</span></h2>
+                        <!--<div class="block_pink">
+                            <div id="count7" class="f_36 f_count">0</div>
+                        </div>-->
+                        <div class="people_box pl_50">
+                            <ul class="people_list people_list2 " style="opacity:0">
+                                <!-- <li>
+                        <img src="img/icon3.png" alt="people">
+                    </li> -->
+                                <li>
+                                    <img src="img/icon3_4.png" alt="people">
+                                </li>
+                                <li>
+                                    <img src="img/icon3_4.png" alt="people">
+                                </li>
+
+
+                            </ul>
+                            <div class="people_ul_animation">
+                                <ul class="people_list people_list_animation people_list2 people_list_animation2">
+                                    <li>
+                                        <img src="img/icon3_4.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_4.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_4.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_4.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_4.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_4.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_4.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_4.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_4.png" alt="people">
+                                    </li>
+                                    <li>
+                                        <img src="img/icon3_4.png" alt="people">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pt_30">
+                        <span class="leftbox_tittle pl_50">|
+                            <b>&nbsp;其它</b>
+                        </span>
+                        <h2 class="f_24">萎缩性胃炎</h2>
+                        <div class="block_orange">
+                            <div id="count8" class="f_36 f_count">38</div>
+                        </div>
+                        <h2 class="f_24">胃溃疡</h2>
+                        <div class="block_pink2">
+                            <div id="count9" class="f_36 f_count">141</div>
+                        </div>
+                        <h2 class="f_24">胃息肉</h2>
+                        <div class="block_purple">
+                            <div id="count10" class="f_36 f_count">450</div>
+                        </div>
+                        <!--  <h2 class="f_24">非萎缩性胃炎</h2>
+                        <div class="block_blue2">
+                            <div id="count11" class="f_36 f_count">5800</div>
+                        </div>-->
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="leftbox2">
+
+            <ul>
+                <li>
+                    <div class="bblock_red ">
+                        <b class="f_28 f_count">申请医院</b>
+                        <div style="margin-top:5px;"><span id="count12" class="f_30 f_count">123</span><span class="f_24">家</span></div>
+                    </div>
+
+                    <div class="bblock_gray ">
+                        <b class="f_28 f_count">开展筛查医院</b>
+                        <div style="margin-top:5px;"><span id="count13" class="f_30 f_count">14</span><span class="f_24">家</span></div>
+                    </div>
+
+                    <div class="bblock_blue ">
+                        <b class="f_28 f_count">筛查总人数</b>
+                        <div style="margin-top:5px;"><span id="count14" class="f_30 f_count">6544</span><span class="f_24">人</span></div>
+                    </div>
+                    <!--  <div class="bblock_pink ">
+                        <b class="f_36 f_count">合计筛查病人数</b>
+                        <div id="count15" class="f_36 f_count">800</div>
+                    </div>-->
+                    <h2 class="wrap_tittle ">
+                        <i>
+                            <img src="img/icon4.png">
+                        </i>
+                        <div>
+                            <span class="f_28">筛查排名</span>
+                            <p id="sort-mark">*按筛查总人数排名</p>
+                        </div>
+                    </h2>
+                </li>
+
+            </ul>
+        </div>
+        <!--gundong-->
+        <div class="wrap">
+
+            <input type="button" value="start" id="start" hidden="hidden" />
+            <input type="button" value="end" id="end" hidden="hidden" />
+            <div id="Marquee_x" class="box">
+                <ul id="roll">
+                    <li id="top1">
+                        <b class="f_48">1</b>
+                        <span class="f_30">昆山中医医院医联体</span>
+                        <span class="f_24">1939人</span>
+                    </li>
+                    <li id="top2">
+                        <b class="f_48">2</b>
+                        <span class="f_30">无锡人民医院医联体</span>
+                        <span class="f_24">1756人</span>
+                    </li>
+                    <li id="top3">
+                        <b class="f_48">3</b>
+                        <span class="f_30">江南大学附属医院医联体（滨湖中医院）</span>
+                        <span class="f_24">1378人</span>
+                    </li>
+                    <li id="top4">
+                        <b class="f_48">4</b>
+                        <span>广东茂名市人民医院医联体</span>
+                        <span class="f_24">833人</span>
+                    </li>
+                    <li id="top5">
+                        <b class="f_48">5</b>
+                        <span>解放军101医院医联体</span>
+                        <span class="f_24">605人</span>
+                    </li>
+                    <li id="top6">
+                        <b class="f_48">6</b>
+                        <span>无锡中医医院医联体</span>
+                        <span class="f_24">587人</span>
+                    </li>
+                    <li id="top7">
+                        <b class="f_48">7</b>
+                        <span>上海长海医院</span>
+                        <span class="f_24">491人</span>
+                    </li>
+                    <li id="top8">
+                        <b class="f_48">8</b>
+                        <span>无锡第二人民医院医联体</span>
+                        <span class="f_24">478人</span>
+                    </li>
+                    <li id="top9">
+                        <b class="f_48">9</b>
+                        <span>江阴人民医院医联体</span>
+                        <span class="f_24">373人</span>
+                    </li>
+                    <li id="top10">
+                        <b class="f_48">10</b>
+                        <span>江南大学附属医院医联体（无锡市第九人民医院）</span>
+                        <span class="f_24">217人</span>
+                    </li>
+                    <li id="top11">
+                        <b class="f_48">11</b>
+                        <span>无锡锡山人民医院医联体</span>
+                        <span class="f_24">192人</span>
+                    </li>
+                    <li id="top12">
+                        <b class="f_48">12</b>
+                        <span>无锡市第三人民医院医联体1</span>
+                        <span class="f_24">149人</span>
+                    </li>
+                    <li id="Li1">
+                        <b class="f_48">13</b>
+                        <span>广东茂名市人民医院1</span>
+                        <span class="f_24">84人</span>
+                    </li>
+                    <li id="Li2">
+                        <b class="f_48">14</b>
+                        <span>重庆中医院</span>
+                        <span class="f_24">28人</span>
+                    </li>
+                    <li id="Li3">
+                        <b class="f_48">15</b>
+                        <span>福建省肿瘤医院医联体1(福州第一医院）</span>
+                        <span class="f_24">12人</span>
+                    </li>
+                    <li id="Li4">
+                        <b class="f_48">16</b>
+                        <span>宁夏人民医院宁南医院医联体</span>
+                        <span class="f_24">2人</span>
+                    </li>
+                    <li id="Li2">
+                        <b class="f_48">17</b>
+                        <span>深圳医院</span>
+                        <span class="f_24">1人</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="files/jquery.js"></script>
+    <script src="Scripts/echarts.js"></script>
+    <script src="Scripts/china.js"></script>
+    <script src="Scripts/chinaData.js"></script>
+    <script src="Scripts/chinaData2.js"></script>
+    <script src="files/count.js"></script>
+    <script src="Scripts/canvas-report.js"></script>
+    <script src="Scripts/jQuery-jcMarquee.js"></script>
+    <script src="Scripts/update.js"></script>
+    <script>
+        console.log(obj.rate1)
+        var mapData = sequence,
+            provinceData = pointData,
+            mapData2 = sequence2,
+            provinceData2 = pointData2,
+            people_ul_animation = $(".people_ul_animation"),
+            wrap_tittle = $(".wrap_tittle"),
+            wrapperDom = $(".wrapper"),
+            borderboxDom = $(".borderbox"),
+            people_count = $(".people_count"),
+            leftbox = $(".leftbox"),
+            change_tittle_span = $(".change_tittle span"),
+            block_blue2 = $(".block_blue2"),
+            bblock_red = $(".bblock_red"),
+            bblock_blue = $(".bblock_blue"),
+            bblock_gray = $(".bblock_gray")
+        //声明重复用到的jquery的dom对象
+
+        wrap_tittle.animate({
+            left: '-9999'
+        }, 1);
+
+        StartFlash(0);
+
+        function StartFlash(index) {
+            if (index == 1) {
+                wrapperDom.animate({
+                    left: '0'
+                }, 1000);
+            }
+
+            setTimeout("StartLeftBox()", 5000); //开始左边列表
+            setTimeout("StartLeftBoxNum()", 5500); //开始左边列表数字跳动
+            setTimeout("peopleNum()", 7000); //开始左边小人动画
+            setTimeout("StartRiskChart()", 9000); //开始风险图
+            setTimeout("EndLeftBox()", 13300); //结束左边列表
+            setTimeout("peopleNum2()", 17500); //开始左边小人动画
+            setTimeout("StartArcstrip()", 15500); //开始弧形条
+            setTimeout("peoplecount()", 18500); //开始小人数字
+            setTimeout("EndRiskAndArc()", 22000); //结束风险图和弧形条
+            setTimeout("peoplecountstop()", 22000); //结束小人数字
+            setTimeout("StartNext()", 22500); //开始下个场景
+            setTimeout("ChangeTitle()", 23000); //变更标题
+            setTimeout("StartSquarestrip1()", 27000); //开始方形条
+            setTimeout("StartSquarestrip2()", 28000); //开始方形条
+            setTimeout("StartSquarestrip3()", 28500); //开始方形条
+            // setTimeout("StartSquarestrip4()", 25000); //开始方形条
+            setTimeout("StartSquarestrip5()", 29500); //开始筛查排名标题
+
+            setTimeout("StartTop()", 30500); //开始筛选排名
+
+            setTimeout("Next()", 60000); //轮回第一个场景
+
+        }
+
+
+        //开始左边列表
+        function StartLeftBox() {
+
+            borderboxDom.animate({
+                left: '3%'
+
+            }, 2000);
+
+        }
+
+
+        //开始左边列表数字跳动
+        function StartLeftBoxNum() {
+            $("#count1").numberRock(obj.count1);
+            $("#count2").numberRock(obj.count2);
+            $("#count3").numberRock(obj.count3);
+            $("#count4").numberRock(obj.count4);
+        }
+
+        //开始风险图
+        function StartRiskChart() {
+
+            $(".jq22-container").animate({
+                right: '20'
+            }, 2000);
+            RiskLoad();
+            $("#mrak").show();
+        }
+
+        //结束左边列表
+        function EndLeftBox() {
+
+            borderboxDom.animate({
+                left: '-100%'
+            }, 2000);
+        }
+        //开始小人动画2
+        function peopleNum2(num1, num2) {
+            people_ul_animation.eq(2).animate({
+                width: obj.rnum1
+            }, 1000);
+            people_ul_animation.eq(3).animate({
+                width: obj.rnum2
+            }, 1000);
+            people_ul_animation.eq(4).animate({
+                width: obj.rnum3
+            }, 1000);
+
+
+        }
+        //开始小人数字
+        function peoplecount() {
+            people_count.addClass("people_count_block");
+
+        }
+        //开始左边圆弧条
+        function StartArcstrip() {
+            leftbox.animate({
+                left: '0'
+            }, 2000);
+
+            $(".block_orange").animate({
+                width: '100'
+            }, 3000);
+            $("#count8").numberRock({
+                lastNumber: obj.onum1,
+                duration: 2500,
+                easing: 'swing', //慢快慢
+            });
+            $(".block_pink2").animate({
+                width: '141'
+            }, 4000);
+            $("#count9").numberRock({
+                lastNumber: obj.onum2,
+                duration: 4000,
+                easing: 'swing', //慢快慢
+            });
+            $(".block_purple").animate({
+                width: '300'
+            }, 4000);
+            $("#count10").numberRock({
+                lastNumber: obj.onum3,
+                duration: 4000,
+                easing: 'swing', //慢快慢
+            });
+            block_blue2.animate({
+                width: '200'
+            }, 4000);
+            $("#count11").numberRock({
+                lastNumber: 35680,
+                duration: 4000,
+                easing: 'swing', //慢快慢
+            });
+
+        }
+
+
+        //结束风险图和左边圆弧条
+        function EndRiskAndArc() {
+            leftbox.animate({
+                left: '-100%'
+            }, 2000);
+            $(".jq22-container").animate({
+                right: '-100%'
+            }, 2000);
+            block_blue2.width(0);
+            $(".block_red").width(0);
+            $(".block_blue").width(0);
+            $(".block_pink").width(0);
+            $(".block_orange").width(0);
+            $(".block_pink2").width(0);
+            $(".block_purple").width(0);
+            block_blue2.width(0);
+
+            people_ul_animation.width(0);
+
+        }
+        //结束小人数字
+        function peoplecountstop() {
+            people_count.removeClass("people_count_block");
+
+        }
+        //第二个场景开始
+        function StartNext() {
+            $("#mrak").hide();
+            wrapperDom.animate({
+                left: '9999'
+            }, 3000);
+
+
+
+        }
+
+        //更换第二个场景title
+        function ChangeTitle() {
+            change_tittle_span.eq(0).removeClass('underline')
+            change_tittle_span.eq(1).addClass('underline')
+            //更换地图数据
+            myChart.clear();
+            sequence = mapData2;
+            pointData = provinceData2;
+            cityCount = 7;
+            count = 0;
+            timer = 5000
+            mapShowWl()
+            wrapperDom.animate({
+                left: '0'
+                // }, 3000);
+            }, 1000);
+        }
+
+        //开始方形条
+
+
+        function StartSquarestrip1() {
+            bblock_red.width(0);
+            bblock_gray.width(0);
+            bblock_blue.width(0);
+            $('.bblock_blue b').hide();
+            $('.bblock_gray b').hide();
+            $('.bblock_red b').hide();
+            $(".leftbox2").animate({
+                left: '0'
+            }, 2000);
+
+            bblock_red.animate({
+                width: '270',
+            }, 4000);
+
+            $("#count12").numberRock({
+                lastNumber: obj.anum1,
+                duration: 4000,
+                easing: 'swing', //慢快慢
+            });
+        }
+
+        function StartSquarestrip2() {
+            bblock_gray.animate({
+                width: '150',
+            }, 4000);
+            $("#count13").numberRock({
+                lastNumber: obj.anum2,
+                duration: 4000,
+                easing: 'swing', //慢快慢
+            });
+        }
+
+        function StartSquarestrip3() {
+            bblock_blue.animate({
+                //width: '72980',
+                width: '360',
+            }, 4000);
+            $("#count14").numberRock({
+                lastNumber: obj.anum3,
+                duration: 4000,
+                easing: 'swing', //慢快慢
+            });
+
+
+        }
+
+
+
+        function StartSquarestrip5() {
+            wrap_tittle.show().animate({
+                width: '350',
+                left: '0'
+            }, 3000);
+            $('.bblock_blue b').show();
+            $('.bblock_gray b').show();
+            $('.bblock_red b').show();
+        }
+
+        //开始筛查排名
+        function StartTop() {
+            $(".wrap").animate({
+                left: '0'
+            }, 2000);
+
+            setTimeout("start()", 4000);
+        }
+
+        //轮回第一个场景
+
+        function Next() {
+            bblock_red.animate({
+                left: '-9999'
+
+            }, 100);
+            bblock_gray.animate({
+                left: '-9999'
+
+            }, 100);
+            bblock_blue.animate({
+                left: '-9999'
+
+            }, 100);
+            $(".bblock_pink").animate({
+                left: '-9999'
+
+            }, 100);
+            wrap_tittle.animate({
+                left: '-9999'
+
+            }, 100);
+            wrapperDom.animate({
+                left: '9999'
+            }, 3000);
+            $(".leftbox2").animate({
+                left: '-100%'
+            }, 2000);
+
+            $(".wrap").animate({
+                left: '9999'
+            }, 10000);
+            change_tittle_span.eq(0).addClass('underline')
+            change_tittle_span.eq(1).removeClass('underline')
+
+            end();
+            //更换地图数据
+            myChart.clear();
+            sequence = mapData;
+            pointData = provinceData;
+            cityCount = 6;
+            count = 0;
+            timer = 3300
+            mapShowWl()
+            StartFlash(1);
+        }
+    </script>
+
+    <!--第三方-->
+    <script>
+        //小人动画
+        function peopleNum(num1, num2) {
+            people_ul_animation.eq(0).animate({
+                width: obj.rate1
+            }, 1000);
+            people_ul_animation.eq(1).animate({
+                width: obj.rate2
+            }, 1000);
+        }
+
+
+        //地图
+        var myChart = echarts.init(document.getElementById('china-map'));
+        myChart.showLoading();
+
+
+        var cityCount = 6;
+        option = {
+
+            series: sequence[""]
+
+        }
+        var count = 0;
+
+        var timeTicket = null;
+        let timer = 3300
+        function mapShowWl(){
+            timeTicket && clearInterval(timeTicket);
+            timeTicket = setInterval(function () {
+                if (count == cityCount) {
+                    return;
+                }
+    
+                var option = myChart.getOption();
+                option.series = sequence[pointData[count].province];
+                myChart.setOption(option);
+                count++;
+                //@
+            }, timer);
+        }
+        mapShowWl()
+        // }, 1000);
+
+
+
+        myChart.setOption(option);
+        myChart.hideLoading();
+
+        function AutoScroll(obj) {
+            $(obj).find("dl:first").animate({
+                marginLeft: "-300px"
+            }, 1000, function () {
+                $(this).css({
+                    marginLeft: "0px"
+                }).find("dd:first").appendTo(this);
+            });
+        }
+        var init;
+
+        function start() {
+
+            $('#start').click();
+        }
+
+        function end() {
+            $('#end').click();
+        }
+
+        $(function () {
+            $('#Marquee_x').jcMarquee({
+                'marquee': 'x',
+                'margin_right': '35px',
+                'speed': 10
+            });
+            end();
+        });
+    </script>
+
+</body>
+
+</html>

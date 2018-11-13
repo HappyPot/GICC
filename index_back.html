@@ -1,0 +1,802 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>GICC</title>
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css">
+</head>
+
+<body>
+    <div class="top">
+    <img src="img/logo.png">
+        <p class="tittle">GECA早期胃癌筛查大数据平台</p>
+        <!-- <h2 class="change_tittle"><span>——</span>&nbsp;筛查监控&nbsp;<span>——</span></h2>
+        <h2 class="change_tittle2" style="display: none"><span>——</span>&nbsp;运营分析&nbsp;<span>——</span></h2> -->
+        <div class="change_tittle">
+            <span class="underline">筛查监控</span>
+            <span>运营分析</span>
+        </div>
+    </div>
+    <div id="mrak">
+        <span> % </span>
+        <p> * %表示胃癌检出率:</p>
+        <p>早癌或胃癌数/胃镜检查数</p>
+    </div>
+
+    <div class="wrapper">
+
+        <!--map-->
+        <div id="china-map"></div>
+        <!--time-->
+        <div class="time">
+            <img src="img/time.png" style="width: 100%" alt="time">
+        </div>
+        <!--circle-->
+        <div class="jq22-container">
+
+            <div class="A">
+                <canvas width="400" height="400" id="progress-thin"></canvas>
+                <canvas width="400" height="400" id="progress-thick"></canvas>
+                <canvas width="400" height="400" id="bg"></canvas>
+            </div>
+
+        </div>
+        <!--left-->
+        <div id="box">
+            <!--left1-->
+            <div class="borderbox top">
+                <p class="border_tittle">
+                    <i></i>
+                    <span>|&nbsp;血清学检查</span>
+                </p>
+                <div style="padding-left: 25%">
+                    <div id="count1" class="f_48 f_count">6155</div>
+                    <p class="f_24 pb_30">血检总人数</p>
+                    <div id="count2" class="f_48 f_count">2752</div>
+                    <p class="f_24">HP阳性数</p>
+                </div>
+
+                <ul class="people_list">
+                    <li>
+                        <img src="img/icon3.png" alt="people">
+                    </li>
+                    <li>
+                        <img src="img/icon3.png" alt="people">
+                    </li>
+                    <li>
+                        <img src="img/icon3.png" alt="people">
+                    </li>
+                    <li>
+                        <img src="img/icon3.png" alt="people">
+                    </li>
+                    <li>
+                        <img src="img/icon3.png" alt="people">
+                    </li>
+                    <li>
+                        <img src="img/icon3.png" alt="people">
+                    </li>
+                    <li>
+                        <img src="img/icon3.png" alt="people">
+                    </li>
+                    <li>
+                        <img src="img/icon3.png" alt="people">
+                    </li>
+                    <li>
+                        <img src="img/icon3.png" alt="people">
+                    </li>
+                    <li>
+                        <img src="img/icon3.png" alt="people">
+                    </li>
+                </ul>
+                <div class="people_ul_animation">
+                    <ul class="people_list people_list_animation">
+                        <li>
+                            <img src="img/icon3_1.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3_1.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3_1.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3_1.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3_1.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3_1.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3_1.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3_1.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3_1.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3_1.png" alt="people">
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="borderbox bottom">
+                <p class="border_tittle">
+                    <i></i>
+                    <span>|&nbsp;胃镜检查</span>
+                </p>
+                <div style="padding-left: 25%">
+                    <div id="count3" class="f_48 f_count">545</div>
+                    <p class="f_24 pb_20">实际精查人数</p>
+                    <div id="count4" class="f_48 f_count">1747</div>
+                    <p class="f_24">应精查人数</p>
+                </div>
+                <ul class="people_list">
+                    <li>
+                        <img src="img/icon3.png" alt="people">
+                    </li>
+                    <li>
+                        <img src="img/icon3.png" alt="people">
+                    </li>
+                    <li>
+                        <img src="img/icon3.png" alt="people">
+                    </li>
+                    <li>
+                        <img src="img/icon3.png" alt="people">
+                    </li>
+                    <li>
+                        <img src="img/icon3.png" alt="people">
+                    </li>
+                    <li>
+                        <img src="img/icon3.png" alt="people">
+                    </li>
+                    <li>
+                        <img src="img/icon3.png" alt="people">
+                    </li>
+                    <li>
+                        <img src="img/icon3.png" alt="people">
+                    </li>
+                    <li>
+                        <img src="img/icon3.png" alt="people">
+                    </li>
+                    <li>
+                        <img src="img/icon3.png" alt="people">
+                    </li>
+                </ul>
+                <div class="people_ul_animation">
+                    <ul class="people_list people_list_animation">
+                        <li>
+                            <img src="img/icon3_1.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3_1.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3_1.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3_1.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3_1.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3_1.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3_1.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3_1.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3_1.png" alt="people">
+                        </li>
+                        <li>
+                            <img src="img/icon3_1.png" alt="people">
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <!--left2-->
+            <div class="leftbox">
+                <h2 class="leftbox_tittle">诊断结果</h2>
+                <ul>
+                    <li>
+                        <span class="leftbox_tittle pl_50">|
+                            <b>&nbsp;早癌&nbsp;/&nbsp;胃癌</b>
+                        </span>
+                        <h2 class="f_24">高级别上皮内瘤变</h2>
+                        <div class="block_red">
+                            <div id="count5" class="f_36 f_count">2</div>
+                        </div>
+                        <h2 class="f_24">早期胃癌</h2>
+                        <div class="block_blue">
+                            <div id="count6" class="f_36 f_count">4</div>
+                        </div>
+                        <h2 class="f_24">进展期胃癌</h2>
+                        <div class="block_pink">
+                            <div id="count7" class="f_36 f_count">0</div>
+                        </div>
+                    </li>
+                    <li class="pt_30">
+                        <span class="leftbox_tittle pl_50">|
+                            <b>&nbsp;其它</b>
+                        </span>
+                        <h2 class="f_24">萎缩性胃炎</h2>
+                        <div class="block_orange">
+                            <div id="count8" class="f_36 f_count">38</div>
+                        </div>
+                        <h2 class="f_24">胃溃疡</h2>
+                        <div class="block_pink2">
+                            <div id="count9" class="f_36 f_count">141</div>
+                        </div>
+                        <h2 class="f_24">胃息肉</h2>
+                        <div class="block_purple">
+                            <div id="count10" class="f_36 f_count">450</div>
+                        </div>
+                      <!--  <h2 class="f_24">非萎缩性胃炎</h2>
+                        <div class="block_blue2">
+                            <div id="count11" class="f_36 f_count">5800</div>
+                        </div>-->
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="leftbox2">
+
+            <ul>
+                <li>
+                    <div class="bblock_red ">
+                        <b class="f_28 f_count">申请医院</b>
+                        <div ><span id="count12" class="f_30 f_count">105</span><span class="f_24">家</span></div>
+                    </div>
+
+                    <div class="bblock_gray ">
+                        <b class="f_28 f_count">开展筛查医院</b>
+                        <div ><span id="count13" class="f_30 f_count">14</span><span class="f_24">家</span></div>
+                    </div>
+
+                    <div class="bblock_blue ">
+                        <b class="f_28 f_count">筛查总人数</b>
+                        <div ><span id="count14" class="f_30 f_count">6155</span><span class="f_24">家</span></div>
+                    </div>
+                    <!--  <div class="bblock_pink ">
+                        <b class="f_36 f_count">合计筛查病人数</b>
+                        <div id="count15" class="f_36 f_count">800</div>
+                    </div>-->
+                    <h2 class="wrap_tittle ">
+                        <i>
+                            <img src="img/icon4.png">
+                        </i>
+                        <div ><span class="f_28">筛查排名</span>
+                        <p id="sort-mark">*按筛出的早癌/胃癌数排名</p>
+                        </div>
+                    </h2>
+                </li>
+
+            </ul>
+        </div>
+        <!--gundong-->
+        <div class="wrap">
+
+            <div id="pic_list_1" class="scroll_horizontal">
+                <!--<a class="next"></a><a class="prev"></a>-->
+                <div class="box">
+                    <!--<span class="prev">上一张</span>-->
+                    <dl id="roll">
+                        <dd id="top1">
+                            <b class="f_48">1</b>
+                            <span class="f_30">无锡太湖医院（解放军101医院）医联体</span>
+                            <span class="f_24">2人</span>
+                        </dd>
+                        <dd id="top2">
+                            <b class="f_48">2</b>
+                            <span class="f_30">无锡人民医院医联体</span>
+                             <span class="f_24">1人</span>
+                        </dd>
+                        <dd id="top3">
+                            <b class="f_48">3</b>
+                            <span class="f_30">无锡四院医联体</span>
+                             <span class="f_24">1人</span>
+                        </dd>
+                       <!-- <dd id="top4">
+                            <b>4</b>
+                            <span>南京医科大小学</span>
+                        </dd>
+                        <dd id="top5">
+                            <b>5</b>
+                            <span>香港中文大学</span>
+                        </dd>
+                        <dd id="top6">
+                            <b>6</b>
+                            <span>中国医师学会</span>
+                        </dd>
+                        <dd id="top7">
+                            <b>7</b>
+                            <span>中国医学科学院</span>
+                        </dd>
+                        <dd id="top8">
+                            <b>8</b>
+                            <span>浙江大学</span>
+                        </dd>
+                        <dd id="top9">
+                            <b>9</b>
+                            <span>中国医学科学院</span>
+                        </dd>
+                        <dd id="top10">
+                            <b>10</b>
+                            <span>抗癌学会</span>
+                        </dd>-->
+                    </dl>
+                    <!--<span class="next">下一张</span>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="files/jquery.js"></script>
+    <script src="Scripts/echarts.js"></script>
+    <script src="Scripts/china.js"></script>
+    <script src="Scripts/chinaData.js"></script>
+    <script src="Scripts/chinaData2.js"></script>
+    <script src="files/count.js"></script>
+    <script src="Scripts/canvas-report.js"></script>
+    <script>
+        var mapData = sequence;
+        var provinceData = pointData;
+
+        var mapData2 = sequence2;
+        var provinceData2 = pointData2;
+
+        //$(".bblock_red").animate({
+//            left: '-9999'
+//
+//        }, 1);
+//        $(".bblock_gray").animate({
+//            left: '-9999'
+//
+//        }, 1);
+//        $(".bblock_blue").animate({
+//            left: '-9999'
+//
+//        }, 1);
+//        $(".bblock_pink").animate({
+//            left: '-9999'
+//
+//        }, 1);
+        $(".wrap_tittle").animate({
+            left: '-9999'
+
+        }, 1);
+        StartFlash(0);
+
+        function StartFlash(index) {
+            if (index == 1) {
+                $(".wrapper").animate({
+                    left: '0'
+                    //top:'20%'
+                }, 1000);
+            }
+
+            //index12 = window.clearInterval(index12);
+            setTimeout("StartLeftBox()", 2000); //开始左边列表
+            setTimeout("StartLeftBoxNum()", 2500); //开始左边列表数字跳动
+            setTimeout("peopleNum()", 5000); //开始左边小人动画
+            setTimeout("StartRiskChart()", 3000); //开始风险图
+            setTimeout("EndLeftBox()", 7500); //结束左边列表
+            setTimeout("StartArcstrip()", 8000); //开始弧形条
+            setTimeout("EndRiskAndArc()", 16000); //结束风险图和弧形条
+            setTimeout("StartNext()", 16000); //开始下个场景
+            setTimeout("ChangeTitle()", 16000); //变更标题
+            setTimeout("StartSquarestrip1()", 19000); //开始方形条
+            setTimeout("StartSquarestrip2()", 20000); //开始方形条
+            setTimeout("StartSquarestrip3()", 21000); //开始方形条
+            setTimeout("StartSquarestrip4()", 22000); //开始方形条
+            setTimeout("StartSquarestrip5()", 23000); //开始筛查排名标题
+
+            setTimeout("StartTop()", 26000); //开始筛选排名
+
+            setTimeout("Next()", 46000); //轮回第一个场景
+
+        }
+
+
+        //开始左边列表
+        function StartLeftBox() {
+
+            $(".borderbox").animate({
+                left: '3%'
+
+            }, 2000);
+
+        }
+
+
+        //开始左边列表数字跳动
+        function StartLeftBoxNum() {
+            $("#count1").numberRock({
+                lastNumber: 6155,
+                duration: 3000,
+                easing: 'swing', //慢快慢
+            });
+
+            $("#count2").numberRock({
+                lastNumber: 2752,
+                duration: 3000,
+                easing: 'swing', //慢快慢
+            });
+            $("#count3").numberRock({
+                lastNumber: 545,
+                duration: 3000,
+                easing: 'swing', //慢快慢
+            });
+            $("#count4").numberRock({
+                lastNumber: 1747,
+                duration: 3000,
+                easing: 'swing', //慢快慢
+            });
+        }
+
+        //开始风险图
+        function StartRiskChart() {
+       
+            $(".jq22-container").animate({
+                right: '20'
+            }, 2000);
+            RiskLoad();
+            $("#mrak").show();
+        }
+
+        //结束左边列表
+        function EndLeftBox() {
+
+            $(".borderbox").animate({
+                left: '-100%'
+            }, 2000);
+        }
+
+        //开始左边圆弧条
+        function StartArcstrip() {
+            $(".leftbox").animate({
+                left: '0'
+            }, 2000);
+            $(".block_red").animate({
+                width: '2'
+            }, 4000);
+            $("#count5").numberRock({
+                lastNumber: 2,
+                duration: 4000,
+                easing: 'swing', //慢快慢
+            });
+            $(".block_blue").animate({
+                width: '4'
+            },4000);
+            $("#count6").numberRock({
+                lastNumber: 4,
+                duration: 4000,
+                easing: 'swing', //慢快慢
+            });
+            $(".block_pink").animate({
+                width: '0'
+            }, 4000);
+            $("#count7").numberRock({
+                lastNumber: 0,
+                duration: 4000,
+                easing: 'swing', //慢快慢
+            });
+            $(".block_orange").animate({
+                width: '38'
+            }, 3000);
+            $("#count8").numberRock({
+                lastNumber: 38,
+                duration: 2500,
+                easing: 'swing', //慢快慢
+            });
+            $(".block_pink2").animate({
+                width: '141'
+            }, 4000);
+            $("#count9").numberRock({
+                lastNumber: 141,
+                duration: 4000,
+                easing: 'swing', //慢快慢
+            });
+            $(".block_purple").animate({
+                width: '300'
+            }, 4000);
+            $("#count10").numberRock({
+                lastNumber: 450,
+                duration: 4000,
+                easing: 'swing', //慢快慢
+            });
+            $(".block_blue2").animate({
+                width: '200'
+            }, 4000);
+            $("#count11").numberRock({
+                lastNumber: 35680,
+                duration: 4000,
+                easing: 'swing', //慢快慢
+            });
+        }
+
+
+        //结束风险图和左边圆弧条
+        function EndRiskAndArc() {
+            $(".leftbox").animate({
+                left: '-100%'
+            }, 2000);
+            $(".jq22-container").animate({
+                right: '-100%'
+            }, 2000);
+            $(".block_blue2").width(0);
+            $(".block_red").width(0);
+            $(".block_blue").width(0);
+            $(".block_pink").width(0);
+            $(".block_orange").width(0);
+            $(".block_pink2").width(0);
+            $(".block_purple").width(0);
+            $(".block_blue2").width(0);
+
+            $(".people_ul_animation").width(0);
+
+        }
+        //第二个场景开始
+        function StartNext() {
+			$("#mrak").hide();
+            $(".wrapper").animate({
+                left: '9999'
+            }, 3000);
+
+
+            $(".time").animate({
+                left: '9999'
+            }, 3000);
+        }
+
+        //更换第二个场景title
+        function ChangeTitle() {
+            $(".change_tittle span").eq(0).removeClass('underline')
+            $(".change_tittle span").eq(1).addClass('underline')
+            //更换地图数据
+            myChart.clear();
+            sequence = mapData2;
+            pointData = provinceData2;
+            cityCount = 7;
+            count = 0;
+            $(".wrapper").animate({
+                left: '0'
+            }, 2000);
+        }
+
+        //开始方形条
+
+
+        function StartSquarestrip1() {
+            $(".bblock_red").width(0);
+            $(".bblock_gray").width(0);
+            $(".bblock_blue").width(0);
+            $('.bblock_blue b').hide();
+            $('.bblock_gray b').hide();
+            $('.bblock_red b').hide();
+            $(".leftbox2").animate({
+                left: '0'
+            }, 2000);
+            
+            $(".bblock_red").animate({
+                width: '180',
+            }, 4000);
+
+            $("#count12").numberRock({
+                lastNumber: 105,
+                duration: 4000,
+                easing: 'swing', //慢快慢
+            });
+        }
+
+        function StartSquarestrip2() {
+            $(".bblock_gray").animate({
+                width: '160',
+            }, 4000);
+            $("#count13").numberRock({
+                lastNumber: 14,
+                duration: 4000,
+                easing: 'swing', //慢快慢
+            });
+        }
+
+        function StartSquarestrip3() {
+            $(".bblock_blue").animate({
+                //width: '72980',
+				width: '360',
+            }, 4000);
+            $("#count14").numberRock({
+                lastNumber: 6155,
+                duration: 4000,
+                easing: 'swing', //慢快慢
+            });
+			
+			
+        }
+
+        function StartSquarestrip4() {
+           // $(".bblock_pink").show().animate({
+//                width: '350',
+//                left: '0'
+//            }, 3000);
+//            $("#count15").numberRock({
+//                lastNumber: 800,
+//                duration: 3000,
+//                easing: 'swing', //慢快慢
+//            });
+
+
+        }
+
+        function StartSquarestrip5() {
+            $(".wrap_tittle").show().animate({
+                width: '350',
+                left: '0'
+            }, 3000);
+			$('.bblock_blue b').show();
+			 $('.bblock_gray b').show();
+            $('.bblock_red b').show();
+        }
+
+        //开始筛查排名
+        function StartTop() {
+            $(".wrap").animate({
+                left: '0'
+            }, 2000);
+            setTimeout("start()", 2000);
+        }
+
+        //轮回第一个场景
+
+        function Next() {
+            $(".bblock_red").animate({
+                left: '-9999'
+
+            }, 100);
+            $(".bblock_gray").animate({
+                left: '-9999'
+
+            }, 100);
+            $(".bblock_blue").animate({
+                left: '-9999'
+
+            }, 100);
+            $(".bblock_pink").animate({
+                left: '-9999'
+
+            }, 100);
+            $(".wrap_tittle").animate({
+                left: '-9999'
+
+            }, 100);
+            $(".wrapper").animate({
+                left: '9999'
+            }, 3000);
+            $(".leftbox2").animate({
+                left: '-100%'
+            }, 2000);
+
+            $(".wrap").animate({
+                left: '9999'
+            }, 10000);
+            $(".change_tittle span").eq(0).addClass('underline')
+            $(".change_tittle span").eq(1).removeClass('underline')
+            $(".time").animate({
+                left: '25%'
+            }, 3000);
+            end();
+            //更换地图数据
+            myChart.clear();
+            sequence = mapData;
+            pointData = provinceData;
+            cityCount = 3;
+            count = 0;
+            StartFlash(1);
+        }
+    </script>
+
+    <!--第三方-->
+    <script>
+        //小人动画
+        function peopleNum(num1, num2) {
+            $(".people_ul_animation").eq(0).animate({
+                width: '59%'
+            }, 1000);
+            $(".people_ul_animation").eq(1).animate({
+                width: '80%'
+            }, 1000);
+        }
+
+        //setTimeout("peopleNum()", 2500); //开始左边小人动画
+
+        //地图
+        var myChart = echarts.init(document.getElementById('china-map'));
+        myChart.showLoading();
+
+
+        var cityCount = 3;
+        option = {
+            //layoutCenter: ['30%',  '30%' ],
+            // 如果宽高比大于 1 则宽度为 100，如果小于 1 则高度为 100，保证了不超过 100x100 的区域
+            //layoutSize: '80%',
+
+            //orient: 'horizontal' ,
+            // orient: 'vertical' ,
+            //bottom:'0',
+            series: sequence[""]
+
+        }
+        var count = 0;
+
+        var timeTicket = null;
+        //var dataLength = option.series[0].data.length;
+
+        timeTicket && clearInterval(timeTicket);
+        timeTicket = setInterval(function () {
+            if (count == cityCount) {
+                return;
+            }
+
+            var option = myChart.getOption();
+            option.series = sequence[pointData[count].province];
+            myChart.setOption(option);
+            count++;
+
+
+        }, 5000);
+
+
+
+        myChart.setOption(option);
+        myChart.hideLoading();
+
+        function AutoScroll(obj) {
+            $(obj).find("dl:first").animate({
+                marginLeft: "-20%"
+            }, 1000, function () {
+                $(this).css({
+                    marginLeft: "0px"
+                }).find("dd:first").appendTo(this);
+            });
+        }
+        var init;
+
+        function start() {
+            for (var i = 0; i < 100; i++) {
+                $('#top9').after($('#top10'));
+                $('#top8').after($('#top9'));
+                $('#top7').after($('#top8'));
+                $('#top6').after($('#top7'));
+                $('#top5').after($('#top6'));
+                $('#top4').after($('#top5'));
+                $('#top3').after($('#top4'));
+                $('#top2').after($('#top3'));
+                $('#top1').after($('#top2'));
+            }
+            init = setInterval('AutoScroll(".box")', 2000);
+        }
+
+        function end() {
+            init = window.clearInterval(init);
+
+
+
+        }
+    </script>
+
+</body>
+
+</html>
