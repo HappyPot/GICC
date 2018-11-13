@@ -1,17 +1,17 @@
 let map1 = {
     // 江苏省
     num1: 8,//早癌数
-    num2: 7674//血检数
+    num2: 8249//血检数
 }
 let map2 = {
     // 上海省
-    num1: 2,//早癌数
-    num2: 491//血检数
+    num1: 3,//早癌数
+    num2: 564//血检数
 }
 let map3 = {
     // 广东省
-    num1: 2,//早癌数
-    num2: 918//血检数
+    num1: 3,//早癌数
+    num2: 1317//血检数
 }
 let map4 = {
     // 重庆省
@@ -21,12 +21,22 @@ let map4 = {
 let map5 = {
     // 宁夏
     num1: 0,//早癌数
-    num2: 2//血检数
+    num2: 431//血检数
 }
 let map6 = {
-    // 附件
+    // 福建
     num1: 0,//早癌数
-    num2: 12//血检数
+    num2: 52//血检数
+}
+let map7 = {
+    // 河南
+    num1: 0,//早癌数
+    num2: 5//血检数
+}
+let map8 = {
+    // 四川
+    num1: 0,//早癌数
+    num2: 33//血检数
 }
 
 var data = [];
@@ -2965,6 +2975,488 @@ var series6 = {
         animation: false
     }
 };
+var series7 = {
+    name: '河南省',
+    type: 'map',
+    zoom: 0.7,
+    top: '15%',
+    mapType: 'china',
+    clickable: false,
+    label: {
+        normal: {
+            show: false
+        },
+        emphasis: {
+            show: false
+        }
+    },
+    itemStyle: {
+
+        normal: {
+            areaColor: '#5f3776',
+            borderColor: '#643d7a',
+            borderWidth: 1,
+            //shadowColor:'rgba(121, 59, 136, 0.3)',          //阴影颜色
+            // shadowOffsetX:10,            //阴影水平方向上的偏移距离。
+            // shadowOffsetY:8,            //阴影垂直方向上的偏移距离
+            // shadowBlur:2, 
+
+        },
+        emphasis: {
+            areaColor: '#c19fd2'
+        }
+    },
+    data: [{
+        name: '河南',
+        selected: true
+
+    }],
+
+    markLine: {
+        symbol: ['image://spot.png', 'none'],
+        symbolSize: 20,
+        silent: true,
+        itemStyle: {
+            normal: {
+                color: 'black',
+                lineStyle: {
+                    type: 'solid',
+                    width: 1,
+                    color: '#fff',
+                    //shadowColor: 'rgba(255,255,255,1.0)',
+                    //shadowBlur: 5,
+                    //shadowOffsetX: 30,
+                    //shadowOffsetY: 30,
+                },
+            }
+        },
+        data: [
+            [{
+                value: [4, 5734],
+                name: "河南省",
+                padding: [8, 0, 30, 10],
+                 label: {
+                    normal: {
+                        formatter: [
+                            '{Province|河南}\n{l1|' + map7.num1 + '}   {l2|' + map7.num2 + '}\n{l3|早癌数}   {l4|血检数}\n{l5|0%}\n'
+                        ].join('\n'),
+                        padding: [0, 0, 0, 0],
+                        position: 'end',
+                        distance: 20,
+                        rich: {
+
+                            Province: {
+                                align: 'left',
+                                padding: [8, 0, 30, 0],
+                                fontSize: 20,
+                                fontFamily: 'myFourthFont',
+                            },
+                            l1: {
+                                align: 'center',
+                                //verticalAlign:'middle',
+                                // backgroundColor: '#F86A3E',
+                                backgroundColor: 'rgba(248,106,62,0.6)',
+                                color: '#fff',
+                                padding: [0, 0, 5, 0],
+                                fontSize: 32,
+                                width: 50,
+                                height: 30,
+
+                                borderWidth: 1,
+                                borderColor: 'rgba(248,106,62,0.1)',
+                                fontFamily: 'myFirstFont',
+                            },
+                            l2: {
+                                align: 'center',
+                                //verticalAlign:'bottom',
+                                //backgroundColor: '#F41485',
+                                backgroundColor: 'rgba(244,20,133,0.6)',
+                                color: '#fff',
+                                //borderWidth: 1,
+                                padding: [0, 0, 5, 0],
+                                fontSize: 32,
+                                width: 54,
+                                height: 30,
+
+                                borderWidth: 1,
+                                borderColor: 'rgba(244,20,133,0.1)',
+                                fontFamily: 'myFirstFont',
+                            },
+                            l3: {
+                                align: 'center',
+                                backgroundColor: 'rgba(248,106,62,0.6)',
+                                color: '#fff',
+                                //borderRadius: 15,
+                                padding: [5, 0, 0, 0],
+                                fontSize: 12,
+                                width: 50,
+                                height: 16,
+                                lineHeight: 16,
+
+                                borderWidth: 1,
+                                borderColor: 'rgba(248,106,62,0.1)',
+                                fontFamily: 'myFourthFont',
+                            },
+
+                            l4: {
+                                align: 'center',
+                                backgroundColor: 'rgba(244,20,133,0.6)',
+                                color: '#fff',
+                                //borderRadius: 15,
+                                padding: [5, 0, 0, 0],
+                                fontSize: 12,
+                                width: 54,
+                                height: 16,
+
+                                borderWidth: 1,
+                                borderColor: 'rgba(244,20,133,0.1)',
+                                fontFamily: 'myFourthFont',
+                            },
+                            l5: {
+                                align: 'left',
+
+                                color: '#fff',
+                                padding: [55, 0, 8, 0],
+                                // padding: 5 ,
+                                fontSize: 50,
+                                height: 66,
+                                fontFamily: 'myFirstFont',
+                            },
+                        }
+                    }
+                },
+
+                coord: [114.767413, 34.041544]
+            },
+
+            {
+                name: "河南",
+                coord: [80.71434, 49.304255]
+            }
+
+            ],
+            [
+
+                {
+
+                    symbol: 'none',
+                    coord: [80.71434, 49.304255]
+                },
+                {
+
+                    symbol: 'none',
+                    coord: [65.71434, 49.304255]
+                }
+            ]
+
+
+        ],
+        animation: false
+    }
+};
+
+var series8 = {
+    name: '四川',
+    type: 'map',
+    zoom: 0.7,
+    top: '15%',
+    mapType: 'china',
+    clickable: false,
+    label: {
+        normal: {
+            show: false
+        },
+        emphasis: {
+            show: false
+        }
+    },
+    itemStyle: {
+
+        normal: {
+            areaColor: '#5f3776',
+            borderColor: '#643d7a',
+            borderWidth: 1,
+            //shadowColor:'rgba(121, 59, 136, 0.3)',          //阴影颜色
+            // shadowOffsetX:10,            //阴影水平方向上的偏移距离。
+            // shadowOffsetY:8,            //阴影垂直方向上的偏移距离
+            // shadowBlur:2, 
+
+        },
+        emphasis: {
+            areaColor: '#c19fd2'
+        }
+    },
+    data: [{
+        name: '河南',
+        selected: true
+
+    },
+    {
+        name: '四川',
+        selected: true
+
+    }
+    ],
+
+    markLine: {
+        symbol: ['image://spot.png', 'none'],
+        symbolSize: 20,
+        silent: true,
+        itemStyle: {
+            normal: {
+                color: 'black',
+                lineStyle: {
+                    type: 'solid',
+                    width: 1,
+                    color: '#fff',
+                    //shadowColor: 'rgba(255,255,255,1.0)',
+                    //shadowBlur: 5,
+                    //shadowOffsetX: 30,
+                    //shadowOffsetY: 30,
+                },
+            }
+        },
+        data: [
+            [{
+                value: [4, 5734],
+                name: "河南省",
+                label: {
+                    normal: {
+                        formatter: [
+                            '{Province|河南}\n{l1|' + map7.num1 + '}   {l2|' + map7.num2 + '}\n{l3|早癌数}   {l4|血检数}\n{l5|0%}\n'
+                        ].join('\n'),
+                        padding: [0, 0, 0, 0],
+                        position: 'end',
+                        distance: 20,
+                        rich: {
+
+                            Province: {
+                                align: 'left',
+                                padding: [8, 0, 30, 0],
+                                fontSize: 20,
+                                fontFamily: 'myFourthFont',
+                            },
+                            l1: {
+                                align: 'center',
+                                //verticalAlign:'middle',
+                                // backgroundColor: '#F86A3E',
+                                backgroundColor: 'rgba(248,106,62,0.6)',
+                                color: '#fff',
+                                padding: [0, 0, 5, 0],
+                                fontSize: 32,
+                                width: 50,
+                                height: 30,
+
+                                borderWidth: 1,
+                                borderColor: 'rgba(248,106,62,0.1)',
+                                fontFamily: 'myFirstFont',
+                            },
+                            l2: {
+                                align: 'center',
+                                //verticalAlign:'bottom',
+                                //backgroundColor: '#F41485',
+                                backgroundColor: 'rgba(244,20,133,0.6)',
+                                color: '#fff',
+                                //borderWidth: 1,
+                                padding: [0, 0, 5, 0],
+                                fontSize: 32,
+                                width: 54,
+                                height: 30,
+
+                                borderWidth: 1,
+                                borderColor: 'rgba(244,20,133,0.1)',
+                                fontFamily: 'myFirstFont',
+                            },
+                            l3: {
+                                align: 'center',
+                                backgroundColor: 'rgba(248,106,62,0.6)',
+                                color: '#fff',
+                                //borderRadius: 15,
+                                padding: [5, 0, 0, 0],
+                                fontSize: 12,
+                                width: 50,
+                                height: 16,
+                                lineHeight: 16,
+
+                                borderWidth: 1,
+                                borderColor: 'rgba(248,106,62,0.1)',
+                                fontFamily: 'myFourthFont',
+                            },
+
+                            l4: {
+                                align: 'center',
+                                backgroundColor: 'rgba(244,20,133,0.6)',
+                                color: '#fff',
+                                //borderRadius: 15,
+                                padding: [5, 0, 0, 0],
+                                fontSize: 12,
+                                width: 54,
+                                height: 16,
+
+                                borderWidth: 1,
+                                borderColor: 'rgba(244,20,133,0.1)',
+                                fontFamily: 'myFourthFont',
+                            },
+                            l5: {
+                                align: 'left',
+
+                                color: '#fff',
+                                padding: [55, 0, 8, 0],
+                                // padding: 5 ,
+                                fontSize: 50,
+                                height: 66,
+                                fontFamily: 'myFirstFont',
+                            },
+                        }
+                    }
+                },
+
+             coord: [114.767413, 34.041544]
+            },
+
+             {
+                name: "河南",
+                coord: [80.71434, 49.304255]
+            }
+
+            ],
+            [
+
+                {
+
+                    symbol: 'none',
+                    coord: [80.71434, 49.304255]
+                },
+                {
+
+                    symbol: 'none',
+                    coord: [65.71434, 49.304255]
+                }
+            ],
+            [{
+                value: [0, 309],
+                name: "四川",
+                 label: {
+
+                    normal: {
+                        formatter: [
+                            '{Province|四川}\n{l1|' + map8.num1 + '}   {l2|' + map8.num2 + '}\n{l3|早癌数}   {l4|血检数}\n{l5|0%}\n'
+                        ].join('\n'),
+                        padding: [-130, 0, 0, -130],
+                        position: 'end',
+                        distance: 20,
+                        rich: {
+
+                            Province: {
+                                align: 'left',
+                                padding: [8, 0, 30, 0],
+                                fontSize: 20,
+                                fontFamily: 'myFourthFont',
+                            },
+                            l1: {
+                                align: 'center',
+                                //verticalAlign:'middle',
+                                // backgroundColor: '#F86A3E',
+                                backgroundColor: 'rgba(248,106,62,0.6)',
+                                color: '#fff',
+                                padding: [0, 0, 5, 0],
+                                fontSize: 32,
+                                width: 50,
+                                height: 30,
+
+                                borderWidth: 1,
+                                borderColor: 'rgba(248,106,62,0.1)',
+                                fontFamily: 'myFirstFont',
+                            },
+                            l2: {
+                                align: 'center',
+                                //verticalAlign:'bottom',
+                                //backgroundColor: '#F41485',
+                                backgroundColor: 'rgba(244,20,133,0.6)',
+                                color: '#fff',
+                                //borderWidth: 1,
+                                padding: [0, 0, 5, 0],
+                                fontSize: 32,
+                                width: 54,
+                                height: 30,
+
+                                borderWidth: 1,
+                                borderColor: 'rgba(244,20,133,0.1)',
+                                fontFamily: 'myFirstFont',
+                            },
+                            l3: {
+                                align: 'center',
+                                backgroundColor: 'rgba(248,106,62,0.6)',
+                                color: '#fff',
+                                //borderRadius: 15,
+                                padding: [5, 0, 0, 0],
+                                fontSize: 12,
+                                width: 50,
+                                height: 16,
+                                lineHeight: 16,
+
+                                borderWidth: 1,
+                                borderColor: 'rgba(248,106,62,0.1)',
+                                fontFamily: 'myFourthFont',
+                            },
+
+                            l4: {
+                                align: 'center',
+                                backgroundColor: 'rgba(244,20,133,0.6)',
+                                color: '#fff',
+                                //borderRadius: 15,
+                                padding: [5, 0, 0, 0],
+                                fontSize: 12,
+                                width: 54,
+                                height: 16,
+
+                                borderWidth: 1,
+                                borderColor: 'rgba(244,20,133,0.1)',
+                                fontFamily: 'myFourthFont',
+                            },
+                            l5: {
+                                align: 'left',
+
+                                color: '#fff',
+                                padding: [55, 0, 8, 0],
+                                // padding: 5 ,
+                                fontSize: 50,
+                                height: 66,
+                                fontFamily: 'myFirstFont',
+                            },
+                        }
+                    }
+                },
+                coord: [102.545042, 29.656263]
+            },
+
+            {
+                name: "四川",
+                coord: [97.71434, 19.304255]
+            }
+
+            ],
+            [
+
+                {
+
+                    symbol: 'none',
+                    coord: [97.71434, 19.304255]
+                },
+                {
+
+                    symbol: 'none',
+                    coord: [82.71434, 19.304255]
+                }
+            ]
+
+
+        ],
+        animation: false
+    }
+};
+
+
 var sequence = {};
 sequence['江苏'] = series1;
 sequence['上海'] = series2;
@@ -2972,6 +3464,8 @@ sequence['广东'] = series3;
 sequence['重庆'] = series4;
 sequence['宁夏'] = series5;
 sequence['福建'] = series6;
+sequence['河南'] = series7;
+sequence['四川'] = series8;
 
 
 var pointData = [{
@@ -2991,6 +3485,12 @@ var pointData = [{
 },
 {
     province: '福建'
+},
+{
+    province: '河南'
+},
+{
+    province: '四川'
 }
 
 ];
@@ -3012,4 +3512,4 @@ function everyHandle(obj) {
         }
     }
 }
-handle(series1, series2, series3, series4, series5, series6)
+handle(series1, series2, series3, series4, series5, series6, series7, series8)

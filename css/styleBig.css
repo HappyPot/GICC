@@ -510,8 +510,16 @@ left_tittle {
 	width: 0;
 	
 }
-.bblock_red b, .bblock_gray b, .bblock_blue b{line-height:1;display:none;}
-.bblock_red div, .bblock_gray div, .bblock_blue div{line-height:1;}
+.bblock_black {
+	background: #009ee6;font-family: PingFangSCmedium;box-sizing:border-box;
+	height: 9.2vh;box-sizing:border-box;padding-top:1.7vh;
+	color: #fff;
+	padding-left:20px;
+	width: 0;
+	
+}
+.bblock_red b, .bblock_gray b, .bblock_blue b,.bblock_black b{line-height:1;display:none;}
+.bblock_red div, .bblock_gray div, .bblock_blue div,.bblock_black div{line-height:1;}
 /*.bblock_pink {
 	background: #d91e87;
 	color: #fff;

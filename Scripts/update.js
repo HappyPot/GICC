@@ -1,29 +1,31 @@
 // 血检总人数
-let num = 9125
+let num = 10679
 //hp血检阳性数
-let num2 = 4157
+let num2 = 5007
 // 实际精查人数
-let num3 = 1318
+let num3 = 1517
 // /应精查人数
-let num4 = 3321
+let num4 = 3885
 // 高级别上皮内瘤变
 let rnum1 = '13%'
 // 早期胃癌
-let rnum2 = '45%'
+let rnum2 = '66%'
 // 早期食管癌
 let rnum3 = '13%'
 // 萎缩性胃炎
-let onum1 = 276
+let onum1 = 309
 // 胃溃疡
-let onum2 = 58
+let onum2 = 61
 // 胃息肉
-let onum3 = 229
+let onum3 = 258
 // 申请医院 
-let anum1 = 191
+let anum1 = 71
 // 开展筛查医院
-let anum2 = 17
+let anum2 = 61
 // 筛查总人数 
-let anum3 = 9125
+let anum3 = 10679
+// 认证医院 
+let anum4 = 80
 let obj = {
     // 血检总人数
     count1: {
@@ -71,7 +73,8 @@ let obj = {
     onum3,
     anum1,
     anum2,
-    anum3
+    anum3,
+    anum4
 }
 
 

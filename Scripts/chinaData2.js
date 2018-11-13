@@ -126,7 +126,7 @@ var series11 = {
                            normal: {
                                formatter: [
 							   '{Province|江苏}'
-								+'\n{block10|}{l1|24}   {l2|10}																																								'
+								+'\n{block10|}{l1|24}   {l2|16}																																								'
 							   +'\n{block10|}{l4|申请数}   {l5|筛查数}																																								'
 							   +'\n{l6|}																																								'
 							   +' \n'].join('\n'),
@@ -253,7 +253,7 @@ var series11 = {
                            normal: {
                                formatter: [
 							    '{Province|广东}'
-								+'\n{block10|}{l1|31}   {l2|2}																																								'
+								+'\n{block10|}{l1|34}   {l2|14}																																								'
 							   +'\n{block10|}{l4|申请数}   {l5|筛查数}																																								'
 							   +'\n{l6|}																																								'
 							   +' \n'].join('\n'),
@@ -391,7 +391,7 @@ var series11 = {
                            normal: {
                                formatter: [
 							   '{Province|湖北}'
-								+'\n{block10|}{l1|17}   {l2|0}																																								'
+								+'\n{block10|}{l1|17}   {l2|6}																																								'
 							   +'\n{block10|}{l4|申请数}   {l5|筛查数}																																								'
 							   +'\n{l6|}																																								'
 							   +' \n'].join('\n'),
@@ -520,7 +520,7 @@ var series11 = {
                            normal: {
                                formatter: [
 							   '{Province|山东}'
-								+'\n{block10|}{l1|8}   {l2|0}																																								'
+								+'\n{block10|}{l1|8}   {l2|2}																																								'
 							   +'\n{block10|}{l4|申请数}   {l5|筛查数}																																								'
 							   +'\n{l6|}																																								'
 							   +' \n'].join('\n'),
@@ -730,7 +730,7 @@ var series21 = {
                            normal: {
                                formatter: [
 							   '{block100|}{Province|北京}'
-							   +'\n{block200|}{l1|10}   {l2|0}'
+							   +'\n{block200|}{l1|10}   {l2|2}'
 							   +'\n{block200|}{l4|申请数}   {l5|筛查数}'
 							   +'\n{block10|}'].join('\n'),
 							   
@@ -857,7 +857,7 @@ var series21 = {
                            normal: {
                                formatter: [
 							   '{block100|}{Province|上海}'
-							   +'\n{block200|}{l1|6}   {l2|1}'
+							   +'\n{block200|}{l1|7}   {l2|1}'
 							   +'\n{block200|}{l4|申请数}   {l5|筛查数}'
 							   +'\n{block10|}'].join('\n'),
 							   
@@ -985,7 +985,7 @@ var series21 = {
                            normal: {
                                formatter: [
 							   '{block50|}{Province|重庆}'
-							   +'\n{block100|}{l1|8}   {l2|1}'
+							   +'\n{block100|}{l1|8}   {l2|2}'
 							   +'\n{block100|}{l4|申请数}   {l5|筛查数}'
 							   +'\n{l6|}'
 							   +' \n'].join('\n'),
@@ -1483,7 +1483,7 @@ var series31 = {
                                fontFamily: 'sl'
                            },
                            normal: {
-                               formatter: ['{Province|安徽}\n{l1|8}   {l2|0}\n{l4|申请数}   {l5|筛查数}\n\n\n{l6|}'].join('\n'),
+                               formatter: ['{Province|安徽}\n{l1|8}   {l2|3}\n{l4|申请数}   {l5|筛查数}\n\n\n{l6|}'].join('\n'),
 
                                position: 'end',
                                distance: 20,
@@ -1616,7 +1616,7 @@ var series31 = {
                                fontFamily: 'sl'
                            },
                            normal: {
-                               formatter: ['{Province|福建}\n                                 {l1|5}   {l2|1}\n                                 {l4|申请数}   {l5|筛查数}\n\n\n{l6|}'].join('\n'),
+                               formatter: ['{Province|福建}\n                                 {l1|7}   {l2|2}\n                                 {l4|申请数}   {l5|筛查数}\n\n\n{l6|}'].join('\n'),
 
                                position: 'end',
                                distance: 20,
@@ -1751,7 +1751,7 @@ var series31 = {
                            normal: {
                                formatter: [
 							    '{block50|}{Province|湖南}'
-							   +'\n{block100|}{l1|3}   {l2|0}'
+							   +'\n{block100|}{l1|5}   {l2|0}'
 							   +'\n{block100|}{l4|申请数}   {l5|筛查数}'
 							   +'\n{l6|}'].join('\n'),
 //							   '{Province|湖南}\n{l1|3}   {l2|0}                                 \n{l4|申请数}   {l5|筛查数}                                 \n'].join('\n'),
@@ -1972,7 +1972,7 @@ var series41 = {
                                fontFamily: 'sl'
                            },
                            normal: {
-                               formatter: ['{Province|四川}\n{l1|14}   {l2|0}                                   \n{l4|申请数}   {l5|筛查数}                                   \n\n\n{l6|}'].join('\n'),
+                               formatter: ['{Province|四川}\n{l1|16}   {l2|5}                                   \n{l4|申请数}   {l5|筛查数}                                   \n\n\n{l6|}'].join('\n'),
 
                                position: 'end',
                                distance: 20,
@@ -2104,7 +2104,7 @@ var series41 = {
                                fontFamily: 'sl'
                            },
                            normal: {
-                               formatter: ['{Province|浙江}\n{l1|9}   {l2|0}\n{l4|申请数}   {l5|筛查数}\n\n\n{l6|}'].join('\n'),
+                               formatter: ['{Province|浙江}\n{l1|9}   {l2|1}\n{l4|申请数}   {l5|筛查数}\n\n\n{l6|}'].join('\n'),
 
                                position: 'end',
                                distance: 20,
@@ -2370,7 +2370,7 @@ var series41 = {
                                fontFamily: 'sl'
                            },
                            normal: {
-                               formatter: ['{block100|}{Province|河南}\n{block200|}{l1|4}   {l2|0}\n{block200|}{l4|申请数}   {l5|筛查数}\n{l6|}'].join('\n'),
+                               formatter: ['{block100|}{Province|河南}\n{block200|}{l1|5}   {l2|2}\n{block200|}{l4|申请数}   {l5|筛查数}\n{l6|}'].join('\n'),
 //							   '{Province|河南}\n                                   {l1|3}   {l2|0}\n                                   {l4|申请数}   {l5|筛查数}\n'].join('\n'),
 
                                position: 'end',
@@ -2596,7 +2596,7 @@ var series51 = {
                                fontFamily: 'sl'
                            },
                            normal: {
-                               formatter: ['{Province|黑龙江}\n                                   {l1|10}   {l2|0}\n                                   {l4|申请数}   {l5|筛查数}\n\n\n{l6|}'].join('\n'),
+                               formatter: ['{Province|黑龙江}\n                                   {l1|12}   {l2|0}\n                                   {l4|申请数}   {l5|筛查数}\n\n\n{l6|}'].join('\n'),
 
                                position: 'end',
                                distance: 20,
@@ -2861,7 +2861,7 @@ var series51 = {
                                fontFamily: 'sl'
                            },
                            normal: {
-                               formatter: ['{Province|宁夏}\n{l1|3}   {l2|1}                                   \n{l4|申请数}   {l5|筛查数}                                   \n\n\n{l6|}'].join('\n'),
+                               formatter: ['{Province|宁夏}\n{l1|3}   {l2|2}                                   \n{l4|申请数}   {l5|筛查数}                                   \n\n\n{l6|}'].join('\n'),
 
                                position: 'end',
                                distance: 20,
@@ -3343,7 +3343,7 @@ var series61 = {
                                fontFamily: 'sl'
                            },
                            normal: {
-                               formatter: ['{Province|贵州}\n{l1|2}   {l2|0}                                  \n{l4|申请数}   {l5|筛查数}                                  \n\n\n{l6|}'].join('\n'),
+                               formatter: ['{Province|贵州}\n{l1|4}   {l2|0}                                  \n{l4|申请数}   {l5|筛查数}                                  \n\n\n{l6|}'].join('\n'),
 
                                position: 'end',
                                distance: 20,
@@ -3609,7 +3609,7 @@ var series61 = {
                                fontFamily: 'sl'
                            },
                            normal: {
-                               formatter: ['{Province|江西}\n{l1|2}   {l2|0}\n{l4|申请数}   {l5|筛查数}\n\n\n{l6|}'].join('\n'),
+                               formatter: ['{Province|江西}\n{l1|5}   {l2|0}\n{l4|申请数}   {l5|筛查数}\n\n\n{l6|}'].join('\n'),
 
                                position: 'end',
                                distance: 20,
@@ -3819,7 +3819,7 @@ var series71 = {
                                fontFamily: 'sl'
                            },
                            normal: {
-                               formatter: ['{Province|辽宁}\n                                  {l1|1}   {l2|0}\n                                  {l4|申请数}   {l5|筛查数}\n\n\n{l6|}'].join('\n'),
+                               formatter: ['{Province|辽宁}\n                                  {l1|3}   {l2|0}\n                                  {l4|申请数}   {l5|筛查数}\n\n\n{l6|}'].join('\n'),
 
                                position: 'end',
                                distance: 20,
@@ -3951,7 +3951,7 @@ var series71 = {
                                fontFamily: 'sl'
                            },
                            normal: {
-                               formatter: ['{block50|}{Province|山西}\n{block100|}{l1|5}   {l2|0}\n{block100|}{l4|申请数}   {l5|筛查数}\n{l6|}'].join('\n'),
+                               formatter: ['{block50|}{Province|山西}\n{block100|}{l1|10}   {l2|1}\n{block100|}{l4|申请数}   {l5|筛查数}\n{l6|}'].join('\n'),
 
                                position: 'end',
                                distance: 20,
@@ -4076,7 +4076,7 @@ var series71 = {
                                fontFamily: 'sl'
                            },
                            normal: {
-                               formatter: ['{Province|青海}\n{l1|1}   {l2|0}                                  \n{l4|申请数}   {l5|筛查数}                                  \n\n\n{l6|}'].join('\n'),
+                               formatter: ['{Province|青海}\n{l1|1}   {l2|1}                                  \n{l4|申请数}   {l5|筛查数}                                  \n\n\n{l6|}'].join('\n'),
 
                                position: 'end',
                                distance: 20,

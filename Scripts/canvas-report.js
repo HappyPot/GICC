@@ -2,7 +2,7 @@
     let endThickDom = document.getElementById('progress-thick');
     let endThinDom = document.getElementById('progress-thin');
     let arrayColor = ['#ff107f', '#ff8010', '#10ffef', '#2bff10'] //红，黄，蓝，绿
-    let num = [63.6, 31.2, 5.2] //低中高状态值得数组
+    let num = [63.6, 31.1, 5.3] //低中高状态值得数组
     // // 调用定时器实现动态效果
     let timer = null;
     let n1 = 0;
