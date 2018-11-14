@@ -52,7 +52,7 @@ let obj = {
         easing: 'swing', //慢快慢
     },
     //第一组小人的个数Big
-    rate1: parseInt(((num2 / num) - 0) * 100)-1 + '%',
+    rate1: parseInt(((num2 / num) - 0) * 100)-1.2 + '%',
     //第二组小人的个数Big
     rate2: parseInt(((num3 / num4) - 0) * 100)-2 + '%',
      //第一组小人的个数4K

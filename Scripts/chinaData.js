@@ -798,6 +798,7 @@ var series3 = {
                                 fontSize: 12,
                                 width: 75,
                                 height: 16,
+
                                 borderWidth: 1,
                                 borderColor: 'rgba(244,20,133,0.1)',
                                 fontFamily: 'myFourthFont',
@@ -1206,7 +1207,6 @@ var series4 = {
                                 fontSize: 32,
                                 width: 75,
                                 height: 30,
-
                                 borderWidth: 1,
                                 borderColor: 'rgba(244,20,133,0.1)',
                                 fontFamily: 'myFirstFont',
@@ -1306,6 +1306,7 @@ var series4 = {
                                 fontSize: 32,
                                 width: 50,
                                 height: 30,
+
                                 borderWidth: 1,
                                 borderColor: 'rgba(248,106,62,0.1)',
                                 fontFamily: 'myFirstFont',
@@ -1321,6 +1322,7 @@ var series4 = {
                                 fontSize: 32,
                                 width: 75,
                                 height: 30,
+
                                 borderWidth: 1,
                                 borderColor: 'rgba(244,20,133,0.1)',
                                 fontFamily: 'myFirstFont',
@@ -2104,7 +2106,7 @@ var series5 = {
                                 //borderWidth: 1,
                                 padding: [0, 0, 5, 0],
                                 fontSize: 32,
-                                width: 75,
+                                width:75,
                                 height: 30,
 
                                 borderWidth: 1,
@@ -2430,7 +2432,7 @@ var series6 = {
                                 //borderWidth: 1,
                                 padding: [0, 0, 5, 0],
                                 fontSize: 32,
-                                width: 75,
+                                width:75,
                                 height: 30,
 
                                 borderWidth: 1,

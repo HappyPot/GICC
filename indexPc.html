@@ -514,11 +514,11 @@
                         <div style="margin-top:5px;"><span id="count13" class="f_30 f_count">14</span><span class="f_24">家</span></div>
                     </div>
 
-                     <div class="bblock_black ">
+                    <!--  <div class="bblock_black ">
                         <b class="f_28 f_count">认证医院</b>
-                        <div style="margin-top:5px;"><span id="count_14" class="f_30 f_count">6544</span><span class="f_24">人</span></div>
+                        <div style="margin-top:5px;"><span id="count_14" class="f_30 f_count">6544</span><span class="f_24">家</span></div>
                     </div>
-
+ -->
                     <div class="bblock_blue ">
                         <b class="f_28 f_count">筛查总人数</b>
                         <div style="margin-top:5px;"><span id="count14" class="f_30 f_count">6544</span><span class="f_24">人</span></div>
@@ -680,8 +680,8 @@
             block_blue2 = $(".block_blue2"),
             bblock_red = $(".bblock_red"),
             bblock_blue = $(".bblock_blue"),
-            bblock_gray = $(".bblock_gray"),
-            bblock_black = $(".bblock_black")
+            bblock_gray = $(".bblock_gray")
+            // bblock_black = $(".bblock_black")
         //声明重复用到的jquery的dom对象
 
         wrap_tittle.animate({
@@ -708,18 +708,18 @@
             setTimeout("EndRiskAndArc()", 28000); //结束风险图和弧形条
             setTimeout("peoplecountstop()", 28000); //结束小人数字
             setTimeout("StartNext()", 28500); //开始下个场景
-            setTimeout("ChangeTitle()", 29000); //变更标题
-            setTimeout("StartSquarestrip1()", 33000); //开始方形条
-            setTimeout("StartSquarestrip2()", 34000); //开始方形条
-            setTimeout("StartSquarestrip3()", 34500); //开始方形条
+            setTimeout("ChangeTitle()", 28500); //变更标题
+            setTimeout("StartSquarestrip1()", 29000); //开始方形条
+            setTimeout("StartSquarestrip2()", 30000); //开始方形条
+            setTimeout("StartSquarestrip3()", 30500); //开始方形条
             
-            setTimeout("StartSquarestrip4()", 35000); //开始方形条
+            // setTimeout("StartSquarestrip4()", 35000); //开始方形条
             
-            setTimeout("StartSquarestrip5()", 35500); //开始筛查排名标题
+            setTimeout("StartSquarestrip5()", 31500); //开始筛查排名标题
 
-            setTimeout("StartTop()", 36500); //开始筛选排名
+            setTimeout("StartTop()", 32500); //开始筛选排名
 
-            setTimeout("Next()", 66000); //轮回第一个场景
+            setTimeout("Next()", 62000); //轮回第一个场景
 
         }
 
@@ -745,7 +745,6 @@
 
         //开始风险图
         function StartRiskChart() {
-
             $(".jq22-container").animate({
                 right: '20'
             }, 2000);
@@ -755,7 +754,6 @@
 
         //结束左边列表
         function EndLeftBox() {
-
             borderboxDom.animate({
                 left: '-100%'
             }, 2000);
@@ -771,20 +769,16 @@
             people_ul_animation.eq(4).animate({
                 width: obj.rnum3
             }, 1000);
-
-
         }
         //开始小人数字
         function peoplecount() {
             people_count.addClass("people_count_block");
-
         }
         //开始左边圆弧条
         function StartArcstrip() {
             leftbox.animate({
                 left: '0'
             }, 2000);
-
             $(".block_orange").animate({
                 width: '320'
             }, 3000);
@@ -820,7 +814,6 @@
 
         }
 
-
         //结束风险图和左边圆弧条
         function EndRiskAndArc() {
             leftbox.animate({
@@ -852,9 +845,6 @@
             wrapperDom.animate({
                 left: '9999'
             }, 3000);
-
-
-
         }
 
         //更换第二个场景title
@@ -882,11 +872,11 @@
             bblock_red.width(0);
             bblock_gray.width(0);
             bblock_blue.width(0);
-             bblock_black.width(0);
+             // bblock_black.width(0);
             $('.bblock_blue b').hide();
             $('.bblock_gray b').hide();
             $('.bblock_red b').hide();
-             $('.bblock_black b').hide();
+             // $('.bblock_black b').hide();
             
             $(".leftbox2").animate({
                 left: '0'
@@ -928,19 +918,19 @@
 
         }
 
-        function StartSquarestrip4() {
-            bblock_black.animate({
-                //width: '72980',
-                width: '320',
-            }, 4000);
-            $("#count_14").numberRock({
-                lastNumber: obj.anum4,
-                duration: 4000,
-                easing: 'swing', //慢快慢
-            });
+        // function StartSquarestrip4() {
+        //     bblock_black.animate({
+        //         //width: '72980',
+        //         width: '320',
+        //     }, 4000);
+        //     $("#count_14").numberRock({
+        //         lastNumber: obj.anum4,
+        //         duration: 4000,
+        //         easing: 'swing', //慢快慢
+        //     });
 
 
-        }
+        // }
 
 
         function StartSquarestrip5() {
@@ -951,7 +941,7 @@
             $('.bblock_blue b').show();
             $('.bblock_gray b').show();
             $('.bblock_red b').show();
-            $('.bblock_black b').show();
+            // $('.bblock_black b').show();
         }
 
         //开始筛查排名
